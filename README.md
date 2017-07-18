@@ -1,4 +1,5 @@
 # clion-snap
+[![Snap Status](https://build.snapcraft.io/badge/nsg/clion-snap.svg)](https://build.snapcraft.io/user/nsg/clion-snap)
 
 This is the source of the snap `clion-nsg`, if you like to contribute please make a PR. Feel free to open a issue if you have any comments or need help.
 
