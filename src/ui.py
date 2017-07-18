@@ -10,7 +10,7 @@ import os.path
 
 DOWNLOAD_LINK = "https://download-cf.jetbrains.com/cpp/CLion-2017.1.3.tar.gz"
 DOWNLOAD_SHA256 = "efb80d5c66db367b6d576923850c56dbb0054f44e0370a274ef37ae2d69ab710"
-DOWNLOAD_FILE = "CLion.tar.gz"
+DOWNLOAD_FILE = "CLion-2017.1.3.tar.gz"
 
 class SnapUIWindow(Gtk.Window):
 

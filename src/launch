@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Download CLion
+cd $SNAP_USER_COMMON
+$SNAP/bin/ui.py
+
+# Unpack CLion
+cd $SNAP_USER_DATA
+if [ ! -d $SNAP_USER_DATA/clion-2017.1.3 ]; then
+	tar xf $SNAP_USER_COMMON/CLion-2017.1.3.tar.gz
+
+	# Apply config
+	cat <<- EOF >> $SNAP_USER_DATA/clion-2017.1.3/bin/idea.properties
+		idea.config.path=$SNAP_USER_COMMON/config
+		idea.system.path=$SNAP_USER_COMMON/system
+	EOF
+	cat <<- EOF >> $SNAP_USER_DATA/clion-2017.1.3/bin/clion64.vmoptions
+		-Djava.util.prefs.systemRoot=$SNAP_USER_COMMON
+		-Djava.util.prefs.userRoot=$SNAP_USER_COMMON
+	EOF
+fi
+
+# Run CLion
+cd $SNAP_USER_DATA/clion-2017.1.3/bin
+./clion.sh
