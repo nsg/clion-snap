@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=CLion
+GenericName=CLion
+Comment=A cross-platform IDE for C and C++
+Exec=clion-nsg
+Icon=${SNAP}/meta/gui/clion-nsg.png
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Application
