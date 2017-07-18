@@ -6,10 +6,8 @@ This is the source of the snap `clion-nsg`, if you like to contribute please mak
 ## Install
 
 ```
-sudo snap install clion-nsg --classic
+sudo snap install --classic clion-nsg
 ```
-
-The snap works without --classic but then it do not have access to your build tools like compiler or so. If you chooses to install it without classic make sure to remember to connect the home plug.
 
 ## Security
 
