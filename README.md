@@ -9,6 +9,15 @@ This is the source of the snap `clion-nsg`, if you like to contribute please mak
 sudo snap install --classic clion-nsg
 ```
 
+## Build
+
+```
+snapcraft cleanbuild
+sudo snap install --dangerous --classic clion-nsg*.snap
+```
+
+Note: cleanbuild requires a local working copy of LXD. To build it outside a container use `build`.
+
 ## Security
 
 The snap is build with the build service, all code is here for you to inspect. It's not really sandboxed when we use classic-mode, but it's no worse than the official way to run it.
