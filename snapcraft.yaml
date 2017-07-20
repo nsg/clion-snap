@@ -15,12 +15,6 @@ confinement: classic
 apps:
   clion-nsg:
     command: bin/launch
-    plugs:
-      - x11
-      - unity7
-      - network
-      - network-bind
-      - home
 
 parts:
   clion:
